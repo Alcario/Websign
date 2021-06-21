@@ -7,49 +7,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Websign</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
 </head>
 <body>
-  <div class="px-3 py-2 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <i class="bi bi-bootstrap me-2" style="font-size: 2rem;"></i>
-        </a>
-        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-          <li>
-            <a href="#" class="nav-link text-secondary" style="text-align: center;">
-              <i class="bi bi-house-door bi d-block mx-auto mb-1" style="font-size: 2rem;"></i>
-              <p>Home</p>
-            </a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Websign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white" style="text-align: center;">
-              <i class="bi bi-speedometer2 bi d-block mx-auto mb-1" style="font-size: 2rem;"></i>
-              Dashboard
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white" style="text-align: center;">
-              <i class="bi bi-table bi d-block mx-auto mb-1" style="font-size: 2rem;"></i>
-              Orders
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white" style="text-align: center;">
-              <i class="bi bi-grid bi d-block mx-auto mb-1" style="font-size: 2rem;"></i>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white" style="text-align: center;">
-              <i class="bi bi-person-circle bi d-block mx-auto mb-1" style="font-size: 2rem;"></i>
-              Customers
-            </a>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
+  <main class="container">
+    <div class="row justify-content-center shadow-lg p-3 mb-5 bg-white">
+      <div class="col-4">
+        <p class="align-middle">Navbar example</a>
+      </div>
+      <div class="col-4">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
