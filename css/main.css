@@ -7,8 +7,9 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: #000;
 }
+
+
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -20,90 +21,119 @@ header {
 }
 
 nav{
-    height: 100%;
+    height: 80px;
     width: 100%;
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 }
 
-.bar-btn {
-    font-size: 25px;
+nav.nav-menu {
+    background-color: #86A6DF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label.logo {
     color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
     margin-right: 20px;
-    cursor: pointer;
 }
 
-.nav-menu {
-    position: fixed;
-    width: 100%;
-    height: 0vh;
-    top: 100px;
-    background: rgba(0, 0, 0, .95);
-    text-align: center;
-    transition: all .5s;
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
-.nav-menu li{
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-    transition: all .5s;
-}
-
-.nav-menu li a{
+nav ul li a{
     color: #fff;
-    font-size: 16px;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
-.nav-menu li a.active, .nav-menu li a:hover{
-    color: rgb(248,8,8);
-    transition: .3s;
+a.active, a:hover{
+    background: #504AA7;
+    color: #FFD6B6;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 #check{
     display: none;
 }
 
-#check:checked ~ .nav-menu{
-    height: 100vh;
-}
+/*@media (max-width: 1040px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 15px;
+    }
 
-#check:checked ~ .nav-menu li{
-    display: block;
-}
+    nav ul{
+        margin-right: 0;
+    }
 
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}*/
 
-/*diseño responsive*/
-@media screen and (min-width: 768px){
+@media (max-width: 1040px) {
+    .checkbtn{
+        display: block;
+    }
+
     nav{
-        height: 100px;
+        flex-direction: row;
     }
 
-    .bar-btn{
-        display: none;
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #475053;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
 
-    .nav-menu{
-        position: relative;
-        height: 100px;
-        top: 0;
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
         background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
+        color: #FFD6B6;
     }
 
-    .nav-menu li{
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-
-    .nav-menu li a{
-        font-size: 12px;
+    #check:checked ~ ul{
+        left: 0;
     }
 }
