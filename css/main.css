@@ -1,139 +1,154 @@
 /*FUENTES*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 
-*{
-    padding: 0;
+.container {
+    max-width: 1100px !important;
+}
+
+.color1{
+    background: #efdf85 ;
+    transition: 0.5s;
+    color: white !important;
+}
+
+.color2{
+    transition: 0.5s;
+}
+
+.container .row .col img{
+    background-size: cover;
+    position: relative;
+    width: 500; 
+    height: 333;
+}
+
+.title-color{
+    color: #804b9d;
+}
+
+.title {
+    color: #804b9d;
+    font-size: 45px;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+
+.colNosotros{
+    color: #804b9d !important;
+    font-size: 45px !important;
+}
+
+.btn {
+    background-color: #804b9d !important;
+    border-radius: 20px !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.logo{
+    width: 120px;
+}
+
+#row-portfolio{
+    background-color: #ba7efa;
+}
+
+.row{
     margin: 0;
+}
+
+#row-portfolio img{
+    border-radius: 50%;
+}
+
+#row-nosotros{
+    /*background-image: url('/img/Fondo3.jpg') !important;
+    background-size: cover;*/
+    height: 500px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+#imagen{
+    background-size: cover;
+    position: relative;
+    width: 500; 
+    height: 333;
+}
+
+#row-servicios{
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+#row-frace{
+    background-image: url('assets/fondo3.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px !important;
+    padding-bottom: 200px !important;
+}
+#row-contacto{
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    padding-top: 140px !important;
+    padding-bottom: 140px !important;
+}
+
+#row-servicios img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+#row-nosotros p{
+    font-size: 14px;
+    color: #804b9d !important;
+}
+
+#row-servicios p{
+    font-size: 14px;
+}
+
+
+#row-datos{
+    background-color: #5080E5;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.circulo{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #B3FBFF;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+footer{
+    background-color: black;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+footer a{
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    color: white;
 }
 
-
-
-body {
-    font-family: "Montserrat", sans-serif;
+@media(max-width:992px){
+    .navbar-nav{
+        background-color: #5080E5;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;    
+        padding-left: 20px;    
+    }
 }
-
-header {
-    width: 100%;
-    height: 100%;
-}
-
 nav{
-    height: 80px;
-    width: 100%;
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-}
-
-nav.nav-menu {
-    background-color: #86A6DF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-label.logo {
-    color: #fff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: #fff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active, a:hover{
-    background: #504AA7;
-    color: #FFD6B6;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-/*@media (max-width: 1040px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 15px;
-    }
-
-    nav ul{
-        margin-right: 0;
-    }
-
-    nav ul li a{
-        font-size: 16px;
-    }
-    
-}*/
-
-@media (max-width: 1040px) {
-    .checkbtn{
-        display: block;
-    }
-
-    nav{
-        flex-direction: row;
-    }
-
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #475053;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-    }
-
-    a:hover, a.active{
-        background: none;
-        color: #FFD6B6;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
+    z-index: 100;
 }
